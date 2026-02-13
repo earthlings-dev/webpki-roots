@@ -18,5 +18,5 @@ hex = { workspace = true }
 percent-encoding = { workspace = true }
 tokio = { workspace = true }
 webpki = { workspace = true }
-webpki-ccadb = { path = "../webpki-ccadb" }
+webpki-ccadb = { workspace = true }
 x509-parser = { workspace = true }

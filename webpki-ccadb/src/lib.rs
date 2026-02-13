@@ -4,8 +4,8 @@ use std::ops::Add;
 
 use chrono::{Duration, NaiveDate, Utc};
 use num_bigint::BigUint;
-use pki_types::pem::PemObject;
 use pki_types::CertificateDer;
+use pki_types::pem::PemObject;
 use serde::Deserialize;
 
 // Fetch root certificate data from the CCADB server.

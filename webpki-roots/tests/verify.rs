@@ -6,7 +6,7 @@ use rcgen::{
     BasicConstraints, CertificateParams, CertifiedIssuer, DnType, IsCa, Issuer, KeyPair,
     KeyUsagePurpose,
 };
-use webpki::{anchor_from_trusted_cert, EndEntityCert, Error, KeyUsage};
+use webpki::{EndEntityCert, Error, KeyUsage, anchor_from_trusted_cert};
 use x509_parser::extensions::{GeneralName, NameConstraints as X509ParserNameConstraints};
 use x509_parser::prelude::FromDer;
 

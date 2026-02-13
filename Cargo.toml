@@ -1,26 +1,35 @@
 [workspace]
 members = ["webpki-ccadb", "webpki-root-certs", "webpki-roots"]
-resolver = "2"
+resolver = "3"
 
 [workspace.package]
-edition = "2021"
-rust-version = "1.64"
+edition = "2024"
+rust-version = "1.93"
 homepage = "https://github.com/rustls/webpki-roots"
 repository = "https://github.com/rustls/webpki-roots"
 
 [workspace.dependencies]
-aws-lc-rs = "1.15.2"
-chrono = { version = "0.4.26", default-features = false, features = ["clock"] }
-csv = "1.2.2"
+aws-lc-rs = "1.15.4"
+chrono = { version = "0.4.43", default-features = false, features = ["clock"] }
+csv = "1.4.0"
 hex = "0.4.3"
-num-bigint = "0.4.3"
+num-bigint = "0.4.6"
 percent-encoding = "2.3"
-pki-types = { package = "rustls-pki-types", version = "1.8", default-features = false }
-rcgen = "0.14.3"
+pki-types = { package = "rustls-pki-types", version = "1.14", default-features = false }
+rcgen = "0.14.7"
 reqwest = { version = "0.13", default-features = false, features = ["default-tls"] }
-rustls = "0.23"
-serde = { version = "1.0.183", features = ["derive"] }
+rustls = "0.24.0-dev.0"
+serde = { version = "1.0.228", features = ["derive"] }
 tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
 webpki = { package = "rustls-webpki", version = "0.103", features = ["alloc"] }
 x509-parser = "0.18"
+webpki-ccadb = { version = "0.2.1", path = "webpki-ccadb" }
 yasna = "0.5.2"
+
+[patch.crates-io]
+rustls = { git = "https://github.com/earthlings-dev/rustls" }
+rustls-aws-lc-rs = { git = "https://github.com/earthlings-dev/rustls" }
+rustls-ring = { git = "https://github.com/earthlings-dev/rustls" }
+rustls-webpki = { git = "https://github.com/earthlings-dev/rustls-webpki" }
+rustls-pki-types = { git = "https://github.com/earthlings-dev/pki-types" }
+num-bigint = { git = "https://github.com/earthlings-dev/num-bigint" }

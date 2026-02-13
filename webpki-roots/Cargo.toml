@@ -18,8 +18,8 @@ hex = { workspace = true }
 percent-encoding = { workspace = true }
 rcgen = { workspace = true }
 rustls = { workspace = true }
-tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+tokio = { workspace = true, features = ["macros", "rt-multi-thread"] }
 webpki = { workspace = true }
-webpki-ccadb = { path = "../webpki-ccadb" }
+webpki-ccadb = { workspace = true }
 x509-parser = { workspace = true }
 yasna = { workspace = true }
