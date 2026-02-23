@@ -27,9 +27,9 @@ webpki-ccadb = { version = "0.2.1", path = "webpki-ccadb" }
 yasna = "0.5.2"
 
 [patch.crates-io]
-rustls = { git = "https://github.com/earthlings-dev/rustls" }
-rustls-aws-lc-rs = { git = "https://github.com/earthlings-dev/rustls" }
-rustls-ring = { git = "https://github.com/earthlings-dev/rustls" }
-rustls-webpki = { git = "https://github.com/earthlings-dev/rustls-webpki" }
-rustls-pki-types = { git = "https://github.com/earthlings-dev/pki-types" }
-num-bigint = { git = "https://github.com/earthlings-dev/num-bigint" }
+rustls = { path = "../rustls/rustls" }
+rustls-aws-lc-rs = { path = "../rustls/rustls-aws-lc-rs" }
+rustls-ring = { path = "../rustls/rustls-ring" }
+rustls-webpki = { path = "../rustls-webpki" }
+rustls-pki-types = { path = "../pki-types" }
+num-bigint = { path = "../num-bigint" }
